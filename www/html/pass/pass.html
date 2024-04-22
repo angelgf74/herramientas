@@ -1,0 +1,36 @@
+<h1>Contraseñas</h1>
+<div class="row m-1 m-sm-5">
+    <div class="col-lg-3 col-6 form-check form-switch">
+        <label for="cb-may" class="form-check-label">Mayusculas</label>
+        <input type="checkbox" id="cb-may" checked class="form-check-input"> 
+    </div> 
+
+    <div class="col-lg-3 col-6 form-check form-switch">
+        <label for="cb-min" class="form-check-label">Minusculas</label>
+        <input type="checkbox" id="cb-min" checked class="form-check-input">             
+    </div>
+
+    <div class="col-lg-3 col-6 form-check form-switch">
+        <label for="cb-num" class="form-check-label">Numeros</label>
+        <input type="checkbox" id="cb-num" checked class="form-check-input">   
+    </div>        
+    <div class="col-lg-3 col-6 form-check form-switch">
+        <label for="cb-sim" class="form-check-label">Simbolos</label>
+        <input type="checkbox" id="cb-sim" checked class="form-check-input">            
+    </div>
+</div>
+
+<div class="row m-1 m-md-5">
+    <div class="col-6 col-md-3">   
+        <label for="txt-long" class="form-label">Longitud</label>
+        <input type="number" id="txt-long" value="64" min="1" max="100" class="form-control">
+    </div>
+    <button id='btn-calcular' class="btn btn-primary col-6 col-md-3 offset-md-2 h3">Generar</button> 
+</div>
+<div class="row m-1 m-md-5">
+    <label for="" id="lbl-info" class="h5 text-info"></label>
+</div>
+<div class="row m-1 m-md-5">
+    <!-- <label for="" id="lbl-resultado" class="h2 col text-primary"></label> -->
+    <input type="text" id="lbl-resultado" class="h2 col text-primary border-0" readonly>
+</div>

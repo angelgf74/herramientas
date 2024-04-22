@@ -1,0 +1,19 @@
+{
+    "name": "Herramientas",
+    "short_name": "Herramientas",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "orientation": "landscape",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+    {
+        "src": "./img/logo.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+    }
+    ],
+    "id": "https://angelgf.ddns.net/Herramientas/"
+    } 

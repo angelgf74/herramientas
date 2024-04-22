@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "name": "angelgf.es.herramientas",
+  "displayName": "Herramientas",
+  "version": "1.0.0",
+  "description": "Herramientas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildbrowser": "del /S /F /Q www\\. && webpack && cordova build browser",
+    "buildandroid": "del /S /F /Q www\\. && webpack && cordova build android --release",
+    "build": "del /S /F /Q www\\. && webpack && cordova build && workbox generateSW www\\workbox-config.js && Publicar\\Publicar.bat ",
+    "build2": "del /S /F /Q www\\. && webpack && workbox generateSW www\\workbox-config.js && Publicar\\Publicar2.bat ",
+    "runandroid": "del /S /F /Q www\\. && webpack && cordova run android --device",
+    "firmar": "webpack -c webpack.config-release.js && release\\firmar",
+    "firmarAUX": "webpack -c webpack.config-release.js && cordova build android --release -- --keystore=\"release\\AGFGoogle.keyStore\" --storePass 4murciela.gos ",
+    "help": "webpack --help"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "TRONER",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.2.4",
+    "cordova-browser": "^6.0.0",
+    "cordova-unique-device-id": "^1.3.2",
+    "css-loader": "^6.6.0",
+    "device": "^0.3.12",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "blueimp-md5": "^2.19.0",
+    "cordova": "^11.1.0",
+    "js-sha1": "^0.6.0",
+    "js-sha256": "^0.9.0",
+    "js-sha512": "^0.8.0",
+    "npm-check-updates": "^12.5.0",
+    "path-browserify": "^1.0.1",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  },
+  "cordova": {
+    "platforms": [
+      "browser"
+    ],
+    "plugins": {
+      "cordova-unique-device-id": {}
+    }
+  }
+}

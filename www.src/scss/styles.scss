@@ -1,0 +1,48 @@
+//@import "~jquery-confirm/css/jquery-confirm";
+//@import "~bootstrap/scss/bootstrap";
+
+//@import '~@fortawesome/fontawesome-pro/css/all.css';
+nav-link.active
+{
+    color: red !important;
+}
+@media all and (min-width: 1200px) 
+{
+    html
+    {
+        font-size: 20px;
+    }
+}
+ 
+@media all and (max-width: 1200px) /* and (min-width: 992px) */
+{
+    html
+    {
+        font-size: 18px;
+    }
+}
+ 
+@media all and (max-width: 992px) /* and (min-width: 768px) */
+{
+    html
+    {
+        font-size: 16px;
+    }
+ }
+
+ @media all and (max-width: 768px) /*and (min-width: 576px) */
+ {
+    html
+    {
+        font-size: 14px;
+    }
+ }
+ 
+ @media all and (max-width: 575px)  
+ {
+    html
+    {
+        font-size: 13px;
+    }
+ }
+ 
